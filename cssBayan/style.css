@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: red;
+    background-color: #0e0e15;
+    color: white;
+}
+
+.accordion {
+    max-width: 80rem;
+    margin: 2rem auto;
+    font-size: 1.8rem;
+}
+
+.tab {
+    margin-bottom: 1.0rem;
+    border: 0.1rem solid red;
+}
+
+.tab-title {
+    display: block;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: .2s ease-out;
+    text-align: center;
+}
+
+.tab-title:hover {
+    background-color: palevioletred;
+}
+
+.tab-input {
+    width: 0;
+    height: 0;
+
+    -webkit-appearance: none;
+    appearance: none;
+
+    position: absolute;
+}
+
+.tab-input:checked + .tab-text {
+    display: block;
+}
+.tab-input:hover + .tab-text{
+    display: block;
+}
+
+.tab-text {
+    display: none;
+
+    padding: 10px 15px;
+}
+
