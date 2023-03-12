@@ -19,6 +19,18 @@ img {
     max-height: 40rem;
 }
 
+/*header style start*/
+
+.header {
+    text-align: center;
+
+    font-size: 2.4rem;
+}
+
+/*header style end*/
+
+/*main style start*/
+
 .accordion {
     max-width: 80rem;
     margin: 2rem auto;
@@ -66,4 +78,23 @@ img {
 
     padding: 10px 15px;
 }
+
+/*main style end*/
+
+/*footer style start*/
+
+.footer-container, a{
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: orange;
+    transition: .3s;
+}
+
+/*footer style end*/
 
