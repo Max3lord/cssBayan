@@ -14,6 +14,11 @@ body {
     color: white;
 }
 
+img {
+    max-width: 75rem;
+    max-height: 40rem;
+}
+
 .accordion {
     max-width: 80rem;
     margin: 2rem auto;
@@ -50,12 +55,14 @@ body {
 .tab-input:checked + .tab-text {
     display: block;
 }
+
 .tab-input:hover + .tab-text{
     display: block;
 }
 
 .tab-text {
     display: none;
+    text-align: center;
 
     padding: 10px 15px;
 }
