@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    color: #0e0e15;
+}
+
+img {
+    max-width: 75rem;
+    max-height: 40rem;
+}
+
+/*header style start*/
+
+.header {
+    text-align: center;
+
+    font-size: 2.4rem;
+}
+
+/*header style end*/
+
+/*main style start*/
+
+.accordion {
+    max-width: 80rem;
+    margin: 2rem auto;
+    font-size: 1.8rem;
+    color:orange
+}
+
+.accordion:hover {
+    color: #0e0e15;
+}
+
+.tab {
+    margin-bottom: 1.0rem;
+    border: 0.1rem solid brown;
+    border-radius: 0.5rem;
+}
+
+.tab-title {
+    display: block;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: .2s ease-out;
+}
+
+.tab-input {
+    width: 0;
+    height: 0;
+
+    -webkit-appearance: none;
+    appearance: none;
+
+    position: absolute;
+}
+
+.tab-input:checked ~ .tab-text {
+    display: block;
+}
+
+.tab-input:hover + .tab-text{
+    display: block;
+}
+
+.tab-input:checked + .tab-title{
+    color: black;
+}
+
+.tab-text {
+    display: none;
+    text-align: center;
+
+    padding: 10px 15px;
+}
+
+/*main style end*/
+
+/*footer style start*/
+
+.footer-container, a{
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #0e0e15;
+}
+
+a:hover {
+    color: orange;
+    transition: .3s;
+}
+
+/*footer style end*/
+
