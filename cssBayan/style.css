@@ -64,6 +64,7 @@ img {
 
 .tab-input:checked ~ .tab-picture {
     transform: rotateX(180deg);
+    transition: all .1s;
 }
 
 .tab {
@@ -77,7 +78,6 @@ img {
     display: block;
     cursor: pointer;
     padding: 10px 15px;
-    transition: all .1s;
 }
 
 .tab-input {
@@ -98,15 +98,16 @@ img {
     display: block;
 }
 
-.tab-input:checked + .tab-title{
-    color: black;
-}
-
 .tab-text {
     display: none;
     text-align: center;
 
     padding: 10px 15px;
+}
+
+.tab-title:hover ~ .tab-text{
+    display: block;
+    transition: 1s;
 }
 
 /*main style end*/
@@ -127,4 +128,3 @@ a:hover {
 }
 
 /*footer style end*/
-
