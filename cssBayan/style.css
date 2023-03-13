@@ -62,6 +62,10 @@ img {
     background-image: url("./img/free-icon-down-arrow-959159.png");
 }
 
+.tab-input:checked ~ .tab-picture {
+    transform: rotateX(180deg);
+}
+
 .tab {
     margin-bottom: 1.0rem;
     border: 0.1rem solid brown;
