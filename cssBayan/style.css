@@ -34,21 +34,19 @@ img {
     max-width: 80rem;
     margin: 2rem auto;
     font-size: 1.8rem;
-    color:orange
+    color:orange;
+    transition: .2s;
 }
 
 .accordion:hover {
     color: #0e0e15;
 }
 
-.tab {
-    margin-bottom: 1.0rem;
-    border: 0.1rem solid brown;
-    border-radius: 0.5rem;
-    position: relative;
+.tab-picture {
+    transition: 0.3s ease-out;
 }
 
-.tab-picture {
+.accordion:hover .tab-picture {
     display: block;
     height: 2.4rem;
     width: 2.4rem;
@@ -58,11 +56,18 @@ img {
     background-image: url("./img/free-icon-down-arrow-959159.png");
 }
 
+.tab {
+    margin-bottom: 1.0rem;
+    border: 0.1rem solid brown;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
 .tab-title {
     display: block;
     cursor: pointer;
     padding: 10px 15px;
-    transition: .2s ease-out;
+    transition: .3s;
 }
 
 .tab-input {
