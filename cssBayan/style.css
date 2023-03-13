@@ -54,10 +54,6 @@ img {
     transition: .2s ease-out;
 }
 
-/*.tab-title:hover {*/
-/*    background-color: orange;*/
-/*}*/
-
 .tab-input {
     width: 0;
     height: 0;
@@ -68,12 +64,16 @@ img {
     position: absolute;
 }
 
-.tab-input:checked + .tab-text {
+.tab-input:checked ~ .tab-text {
     display: block;
 }
 
 .tab-input:hover + .tab-text{
     display: block;
+}
+
+.tab-input:checked + .tab-title{
+    color: black;
 }
 
 .tab-text {
